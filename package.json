@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "nedb": "^1.8.0"
+  },
+  "name": "redrocks",
+  "version": "1.0.0",
+  "description": "Umea real website",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "umea"
+  ],
+  "author": "Mason England",
+  "license": "MIT"
+}

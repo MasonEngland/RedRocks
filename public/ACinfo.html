@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Info | umea</title>
+    <link rel="stylesheet" type="text/css" href="infostyle.css" />
+</head>
+<body>
+    <header>
+        <img src="images/main-logo.png" alt="logo" id="header-logo"/>
+        <div id="main-nav">
+            <nav id="navigator">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Calendar</a>
+                <a href="">Divisions</a>
+                <a href="">All-State</a>
+                <a href="">Festivals</a>
+                <a href="">Conferences</a>
+                <a href="">Recources</a>
+                <a href="index.html">Awards</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="content">
+            <h1 style="padding-top: 50px; text-decoration: underline;">Account info</h1>
+                <br />
+            <h2 class="padded" > Username:</h2>
+                <br />
+            <h3 id="uname">Filler</h3>
+                <br />
+            <h2 class="padded" >Email:</h2>
+                <br />
+            <h3 id="email">Filler</h3>
+                <br />
+            <h2 class="padded" >Social security #:</h2>
+                <br />
+            <h3 id="ssn">filler</h3>
+        </div>
+    </main>
+    <footer>
+    </footer>
+    <script>
+        function getCookie(name) {
+            const cDecoded = decodeURIComponent(document.cookie);
+            const cArray = cDecoded.split("; ");
+            let result = null;
+            cArray.forEach(element => {
+                if (element.indexOf(name) == 0) {
+                    result = element.substring(name.length + 1);
+                }
+            })
+            return result;
+        }
+
+        document.getElementById('uname').textContent = getCookie("username");
+        document.getElementById('email').textContent = getCookie("email");
+        document.getElementById('ssn').textContent = getCookie("socialsn");
+
+    </script>
+</body>
+</html>

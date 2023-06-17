@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    height: 250px;
+    background-color: rgb(44, 43, 43);
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#top-logo {
+    position: relative;
+    left: 350px;
+    display: inline-block;
+    text-align: center;
+}
+
+#log-photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1050px;
+}
+
+nav a {
+   padding: 20px;
+}
+
+nav {
+    padding-top: 15px;
+}
+
+footer {
+    height: 200px;
+    background-color:rgb(44, 43, 43);
+}
+
+main {
+    height: 600px;
+    background-image: url("images/background.jpg");
+    text-align: center;
+}
+
+#content {
+    position: relative;
+    top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: white;
+    width: 500px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+th, td {
+    padding: 15px;
+}
+
+#Scores {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sign-in {
+    Float: right;
+    position: relative;
+    right: 15px;
+    top: 15px;
+}

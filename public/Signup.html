@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | umea</title>
+</head>
+<body>
+    <main>
+        <img alt="top-logo" src="images/partial-logo.jpg" id="top-logo"/>
+        <h1>Sign up for UMEA</h1>
+        <form id="main-form">
+            <h3>Username:</h3>
+            <input type="text" id="username" />
+            <div style="color: red;" id="username-error"></div>
+            <h3>Email:</h3>
+            <input type="text" id="email" />
+            <div style="color: red;" id="email-error"></div>
+            <h3>Password:</h3>
+            <input type="password" id="password" />
+            <div style="color: red" id="password-error"></div>
+            <h3>Social security #(important):</h3>
+            <input type="text" id="ssn" />
+            <div style="color: red" id="ssn-error"></div>
+                <br />
+            <button type="submit" id="sub-button">Sign Up</button>
+        </form>
+        <p>already have an account? <br />Click <a href="login.html">here</a> to log in.</p>
+    </main>
+    <script src="scripts/signupscript.js" ></script>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: gray;
+        }
+        main {
+            background-color: white;
+            display: block;
+            margin-left:auto;
+            margin-right: auto;
+            width: 500px;
+            height: 600px;
+            position: relative;
+            top: 50px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        #top-logo {
+            width: 200px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #sub-button {
+            font-size: 20px;
+            margin-top: 30px;
+            font-weight: bold;
+            width: 200px;
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            border-style: none;
+        }
+        a {
+            color: blue;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | umea</title>
+</head>
+<body>
+    <main>
+        <img alt="logo" src="images/partial-logo.jpg" id="logo" />
+        <h1>Sign in to UMEA</h1>
+        <form id="main-form">
+            <h2 style="padding-top: 20px;">Username:</h2>
+            <input type="text" id="username" />
+            <h2 style="padding-top: 40px;">Password:</h2>
+            <input type="password" id="password" />
+                <br />
+            <button type="submit" id="sub-button">Continue</button>
+        </form>
+        <p style="color: grey">don't have an account? <br /> click <a href="Signup.html" style="color:blue">here</a> to create one</p>
+    </main>
+    <script src="scripts/script.js"></script>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: grey;
+        }
+        main {
+            background-color: white;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            top: 50px;
+            outline: 5px;
+            width: 500px;
+            height: 600px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        #logo {
+            width: 200px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #username, #password {
+            width: 200px;
+            height: 20px;
+            font-size: 20px;
+            outline: 10px;
+        }
+        #sub-button {
+            font-size: 20px;
+            margin-top: 50px;
+            font-weight: bold;
+            width: 200px;
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            border-style: none;
+        }
+    </style>
+</body>
+</html>

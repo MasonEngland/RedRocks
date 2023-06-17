@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MB Scores | umea</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <header>
+        <div id="top-logo">
+            <img alt="logssss" src="images/main-logo.png" id="log-photo"/>
+            <nav>
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Calendar</a>
+                <a href="">Divisions</a>
+                <a href="">All-State</a>
+                <a href="">Festivals</a>
+                <a href="">Conferences</a>
+                <a href="">Recources</a>
+                <a href="">Awards</a>
+            </nav>
+        </div>
+        <div id ="sign-in">
+            <a href="login.html">Sign In</a>
+        </div>
+    </header>
+    <main>
+        <div id="content">
+            <h3>2022 RedRocks Scores: 6A Open</h3>
+            <table id="Scores">
+                <tr>
+                    <th>Place</th>
+                    <th>School</th>
+                    <th>Scores</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Bingham HS</td>
+                    <td>100.0</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Herriman HS</td>
+                    <td>99.9</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Farmington HS</td>
+                    <td>89.8</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Westlake HS</td>
+                    <td>87.2</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Davis HS</td>
+                    <td>87.0</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Skyridge HS</td>
+                    <td>82.5</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>American Fork HS</td>
+                    <td>2.0</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+    </footer>
+    <script>
+        // a function to get cookies
+        function getCookie(name) {
+            const cDecoded = decodeURIComponent(document.cookie);
+            const cArray = cDecoded.split("; ");
+            let result = null;
+            cArray.forEach(element => {
+                if (element.indexOf(name) == 0) {
+                    result = element.substring(name.length + 1);
+                }
+            })
+            return result;
+        }
+        //determines if the user is logged in or not
+        let isLogged = getCookie("logged");
+        //grabs user email
+        let userMail = getCookie("email");
+        console.log(isLogged);
+        if (isLogged == "yes" && userMail != null) {
+            document.getElementById('sign-in').innerHTML = `<a href="ACinfo.html">${userMail}</a>`;
+        }
+    </script>
+</body>
+</html>
